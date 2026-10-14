@@ -96,7 +96,7 @@ button, input { font: inherit; }
   font-size:.82rem; font-weight:750; letter-spacing:.08em; text-transform:uppercase;
 }
 .hero h1 { font-size: clamp(2rem, 3vw, 5.2rem); line-height:.99; margin: 22px 0 20px; letter-spacing:-.045em; max-width:800px; }
-.hero h1 span { display:block; background:linear-gradient(90deg,#73e7fb,#b6a2ff); -webkit-background-clip:text; color:transparent; }
+.hero h1 span { display:block; background:linear-gradient(90deg,#73e7fb,#b6a2ff); background-clip: text; -webkit-background-clip:text; color:transparent; }
 .hero-copy { font-size:1.14rem; color:#c7d5e6; max-width:720px; }
 .hero-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:30px; }
 .btn {

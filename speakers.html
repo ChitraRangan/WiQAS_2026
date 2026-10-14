@@ -1,35 +1,310 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Speakers | WiQAS</title><link rel="stylesheet" href="styles.css"></head><body><a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header">
-  <div class="nav-wrap">
-    <a class="brand" href="index.html" aria-label="WiQAS home">
-      <span class="brand-mark" aria-hidden="true"><span class="brand-dot"></span></span>
-      <span class="brand-text"><strong>WiQAS</strong><span>Windsor Quantum Applications Symposium</span></span>
-    </a>
-    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-    <nav class="nav-links" aria-label="Primary navigation">
-      <a href="index.html">Home</a>
-      <!--<a href="about.html">About</a>-->
-      <a href="program.html">Program</a>
-      <a href="speakers.html">Speakers</a>
-      <a href="attend.html">Attend</a>
-      <a href="organizers.html">Committees</a>
-      <a href="past.html">Past Editions</a>
-      <a class="nav-cta" href="attend.html#registration">Register</a>
-    </nav>
-  </div>
-</header>
-<main id="main"><section class="page-hero"><div class="container"><div><!--<div class="page-tag">Invited Speakers</div>--><h1>Speakers</h1><!--<p>Invited speakers for WiQAS 2026 will be listed here with affiliations, talk titles, biographies, and participation format.</p>--></div><!--<span class="badge">Announcements forthcoming</span>--></div></section>
-<section class="section"><div class="container"><div class="section-head"><div><div class="kicker">2026</div><h2>Speaker announcements</h2></div><!--<p>This dedicated page prevents speaker information from being buried inside the agenda and makes the symposium easier to scan and promote.</p>--></div><div class="speaker-grid"><article class="speaker"><div class="speaker-art"><div class="avatar">01</div></div><div class="speaker-body"><h3>Keynote Speaker</h3><p>Affiliation · TBA</p><div class="talk">Talk title will appear here.</div></div></article><article class="speaker"><div class="speaker-art"><div class="avatar">02</div></div><div class="speaker-body"><h3>Invited Speaker</h3><p>Affiliation · TBA</p><div class="talk">Talk title will appear here.</div></div></article><article class="speaker"><div class="speaker-art"><div class="avatar">03</div></div><div class="speaker-body"><h3>Invited Speaker</h3><p>Affiliation · TBA</p><div class="talk">Talk title will appear here.</div></div></article><article class="speaker"><div class="speaker-art"><div class="avatar">04</div></div><div class="speaker-body"><h3>Invited Speaker</h3><p>Affiliation · TBA</p><div class="talk">Talk title will appear here.</div></div></article></div><!--<div style="margin-top:30px" class="notice">The verified 2025 speaker and talk list is preserved under <a href="past.html" style="font-weight:800">Past Editions</a>.</div>--></div></section>
-</main><footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><span class="brand-dot"></span></span><span class="brand-text"><strong>WiQAS</strong><span>Windsor Quantum Applications Symposium</span></span></a>
-      <p>A University of Windsor symposium connecting quantum science, engineering, computation, and real-world applications.</p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Speakers | WiQAS</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .speaker-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .speaker-grid > .speaker {
+      min-width: 0;
+    }
+
+    .speaker-art {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 250px;
+      padding: 24px;
+    }
+
+    .speaker-photo {
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: 200px;
+      height: 200px;
+      box-sizing: border-box;
+      object-fit: cover;
+      object-position: center 20%;
+      border: 4px solid #ffffff;
+      border-radius: 50%;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 960px) {
+      .speaker-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .speaker-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="WiQAS home">
+        <span>
+          <img
+            class="uwinlogo"
+            src="uw_logo_2l_horz.jpg"
+            alt="University of Windsor"
+          >
+        </span>
+
+        <span class="brand-mark" aria-hidden="true">
+          <span class="brand-dot"></span>
+        </span>
+
+        <span class="brand-text">
+          <strong>WiQAS</strong>
+          <span>Windsor Quantum Applications Symposium</span>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >☰</button>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="program.html">Program</a>
+        <a href="speakers.html" aria-current="page">Speakers</a>
+        <a href="attend.html">Attend</a>
+        <a href="organizers.html">Organizers</a>
+        <a href="past.html">Past Editions</a>
+        <a
+          class="nav-cta"
+          href="https://forms.cloud.microsoft/r/x3CUvzhATm"
+        >Register</a>
+      </nav>
     </div>
-    <div><h4>Explore</h4><a href="about.html">About</a><a href="program.html">Program</a><a href="speakers.html">Speakers</a></div>
-    <div><h4>Attend</h4><a href="attend.html#registration">Registration</a><a href="attend.html#venue">Venue</a><a href="attend.html#travel">Travel</a></div>
-    <div><h4>Organization</h4><a href="organizers.html">Committees</a><a href="organizers.html#sponsors">Sponsors</a><a href="past.html">Past Editions</a></div>
-  </div>
-  <div class="copyright"><span>© <span data-year></span> Windsor Quantum Applications Symposium.</span><span>Designed for GitHub Pages · Responsive · No framework required</span></div>
-</footer>
-<script src="script.js"></script></body></html>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <div>
+          <h1>Speakers</h1>
+          <p>
+            <time datetime="2026-11-12">November 12, 2026</time>
+            · University of Windsor
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="kicker">2026</div>
+            <h2>Symposium speakers</h2>
+          </div>
+        </div>
+
+        <div class="speaker-grid">
+
+          <article class="speaker">
+            <div class="speaker-art">
+              <img
+                class="speaker-photo"
+                src="Ghose.png"
+                alt="Prof. Shohini Ghose"
+                width="200"
+                height="200"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+
+            <div class="speaker-body">
+              <h3>Prof. Shohini Ghose</h3>
+              <p>
+                Wilfrid Laurier University<br>
+                Waterloo
+              </p>
+              <div class="talk">
+                <strong>Keynote:</strong> 09:30&ndash;10:15
+              </div>
+            </div>
+          </article>
+
+          <article class="speaker">
+            <div class="speaker-art">
+              <img
+                class="speaker-photo"
+                src="rau.png"
+                alt="Dr. Jeffrey Rau"
+                width="200"
+                height="200"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+
+            <div class="speaker-body">
+              <h3>Dr. Jeffrey Rau</h3>
+              <p>University of Windsor</p>
+              <div class="talk">
+                <strong>Talk:</strong> 10:30&ndash;11:00
+              </div>
+            </div>
+          </article>
+
+          <article class="speaker">
+            <div class="speaker-art">
+              <img
+                class="speaker-photo"
+                src="narayanan.png"
+                alt="Dr. Andal Narayanan"
+                width="200"
+                height="200"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+
+            <div class="speaker-body">
+              <h3>Dr. Andal Narayanan</h3>
+              <p>
+                Quantum City<br>
+                University of Calgary
+              </p>
+              <div class="talk">
+                <strong>Talk:</strong> 11:00&ndash;11:30
+              </div>
+            </div>
+          </article>
+
+          <article class="speaker">
+            <div class="speaker-art">
+              <img
+                class="speaker-photo"
+                src="gotti.png"
+                alt="Dr. Kalyan Gottiparthi"
+                width="200"
+                height="200"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+
+            <div class="speaker-body">
+              <h3>Dr. Kalyan Gottiparthi</h3>
+              <p>
+                Oak Ridge National Laboratory<br>
+                Oak Ridge, Tennessee
+              </p>
+              <div class="talk">
+                <strong>Talk:</strong> 14:45&ndash;15:15
+              </div>
+            </div>
+          </article>
+
+          <article class="speaker">
+            <div class="speaker-art">
+              <img
+                class="speaker-photo"
+                src="iwasawa.png"
+                alt="Dr. Elizabeth Iwasawa"
+                width="200"
+                height="200"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+
+            <div class="speaker-body">
+              <h3>Dr. Elizabeth Iwasawa</h3>
+              <p>
+                Director, Quantum Technology &amp; Operations<br>
+                RBC Royal Bank
+              </p>
+              <div class="talk">
+                <strong>Talk:</strong> 15:15&ndash;15:45
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <p style="margin-top:24px">
+          <a href="program.html" style="color:var(--blue);font-weight:700">
+            View the full program
+          </a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">
+            <span class="brand-dot"></span>
+          </span>
+
+          <span class="brand-text">
+            <strong>WiQAS</strong>
+            <span>Windsor Quantum Applications Symposium</span>
+          </span>
+        </a>
+
+        <p>
+          A University of Windsor symposium connecting quantum science,
+          engineering, computation, and real-world applications.
+        </p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <a href="about.html">About</a>
+        <a href="program.html">Program</a>
+        <a href="speakers.html">Speakers</a>
+      </div>
+
+      <div>
+        <h4>Attend</h4>
+        <a href="attend.html#registration">Registration</a>
+        <a href="attend.html#venue">Venue</a>
+        <a href="attend.html#travel">Travel</a>
+      </div>
+
+      <div>
+        <h4>Organization</h4>
+        <a href="organizers.html">Committees</a>
+        <a href="organizers.html#sponsors">Sponsors</a>
+        <a href="past.html">Past Editions</a>
+      </div>
+    </div>
+
+    <div class="copyright" style="display:block;text-align:center;">
+      <span>
+        © <span data-year></span>
+        Windsor Quantum Applications Symposium.
+      </span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -46,7 +46,7 @@ button, input { font: inherit; }
   display: flex; align-items: center; justify-content: space-between; gap: 24px;
 }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: white; }
-.uwinlogo { width: 42px; height: 42px; border-radius: 13px; position: relative; overflow: hidden; }
+.uwinlogo { width: 150px; height: 60px; border-radius: 13px; position: relative; overflow: hidden; }
 .brand-mark {
   width: 42px; height: 42px; border-radius: 13px; position: relative; overflow: hidden;
   background: linear-gradient(135deg, var(--cyan), var(--violet)); box-shadow: 0 0 30px rgba(34,211,238,.2);
@@ -136,7 +136,7 @@ button, input { font: inherit; }
 .section.alt { background:var(--paper); }
 .container { max-width:var(--max); margin:auto; }
 .section-head { display:flex; justify-content:space-between; gap:36px; align-items:end; margin-bottom:34px; }
-.kicker { color:var(--blue); text-transform:uppercase; letter-spacing:.09em; font-size:.78rem; font-weight:850; }
+.kicker { color:var(--blue); letter-spacing:.09em; font-size:.78rem; font-weight:850; }
 h2 { font-size:clamp(2rem,4vw,3.3rem); line-height:1.08; letter-spacing:-.035em; margin:.45rem 0 0; }
 .section-head p { max-width:560px;color:var(--muted);margin:0; }
 
@@ -169,7 +169,7 @@ h2 { font-size:clamp(2rem,4vw,3.3rem); line-height:1.08; letter-spacing:-.035em;
 .cta-band p{color:#c7d5e6;max-width:650px;margin:8px 0 0}.cta-band h2{margin:0;font-size:2.25rem}
 
 .page-hero { background:linear-gradient(115deg,#071428,#102d58);color:white;padding:72px 22px 58px; }
-.page-hero .container{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end}.page-hero h1{font-size:clamp(2.4rem,5vw,4.3rem);letter-spacing:-.045em;line-height:1;margin:14px 0}.page-hero p{color:#c4d1e2;max-width:740px;margin:0}.page-tag{color:#85e7f5;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem}
+.page-hero .container{display:grid;grid-template-columns:1fr auto;gap:3px;align-items:end}.page-hero h1{font-size:clamp(2.4rem,5vw,4.3rem);letter-spacing:-.045em;line-height:1;margin:14px 0}.page-hero p{color:#c4d1e2;max-width:740px;margin:0}.page-tag{color:#85e7f5;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem}
 
 .two-col { display:grid;grid-template-columns:1fr 1fr;gap:26px; }
 .content-card { background:white;border:1px solid var(--line);border-radius:18px;padding:28px; }
@@ -191,4 +191,21 @@ footer h4{color:white;margin:0 0 10px}footer a{display:block;color:#aebed2;text-
 }
 @media (max-width: 620px) {
   .brand-text span{display:none}.hero-inner{padding-top:68px}.hero h1{font-size:2.7rem}.card-grid,.speaker-grid,.footer-grid{grid-template-columns:1fr}.section{padding:62px 18px}.nav-wrap{padding:0 18px}.timeline-row{grid-template-columns:1fr;gap:3px}.cta-band{padding:28px}.copyright{flex-direction:column}.quantum-card{min-height:280px}.orbit{width:220px;height:84px}.q1{transform:translate(98px,-27px)}.q2{transform:translate(-74px,61px)}.q3{transform:translate(-34px,-88px)}
+}
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.focus-grid > .feature-panel {
+  min-width: 0;
+  margin: 0;
+}
+
+/* Stack the boxes on smaller screens */
+@media (max-width: 768px) {
+  .focus-grid {
+    grid-template-columns: 1fr;
+  }
 }

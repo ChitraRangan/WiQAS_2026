@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="520" viewBox="0 0 520 520" fill="none">
+  <title>Quantum orbit illustration</title>
+  <desc>A softly lit blue sphere surrounded by three continuous blue and gold orbital rings.</desc>
+  <defs>
+    <radialGradient id="aura">
+      <stop stop-color="#b8d8f6" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#e7eff8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sphere" cx=".3" cy=".2" r=".85">
+      <stop stop-color="#fff"/>
+      <stop offset=".21" stop-color="#d9efff"/>
+      <stop offset=".52" stop-color="#8bb8df"/>
+      <stop offset=".77" stop-color="#33669f"/>
+      <stop offset="1" stop-color="#123765"/>
+    </radialGradient>
+    <linearGradient id="blue-orbit" x1="60" y1="100" x2="450" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8fb5db"/>
+      <stop offset=".32" stop-color="#cad9e7"/>
+      <stop offset=".6" stop-color="#4776a8"/>
+      <stop offset="1" stop-color="#a8bfd3"/>
+    </linearGradient>
+    <linearGradient id="gold-orbit" x1="180" y1="40" x2="380" y2="460" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e1c491"/>
+      <stop offset=".5" stop-color="#b89356"/>
+      <stop offset="1" stop-color="#d7be91"/>
+    </linearGradient>
+    <radialGradient id="electron">
+      <stop stop-color="#fff"/>
+      <stop offset=".35" stop-color="#accbe7"/>
+      <stop offset="1" stop-color="#4775a7"/>
+    </radialGradient>
+    <filter id="shadow" x="-50%" y="-200%" width="200%" height="500%">
+      <feGaussianBlur stdDeviation="15"/>
+    </filter>
+  </defs>
+  <ellipse cx="268" cy="444" rx="130" ry="13" fill="#6885a5" opacity=".15" filter="url(#shadow)"/>
+  <circle cx="260" cy="246" r="240" fill="url(#aura)"/>
+  <circle cx="260" cy="246" r="192" stroke="#dbe4ec" stroke-width=".8"/>
+  <!-- Each rear arc and its foreground arc share the same ellipse and endpoints. -->
+  <g stroke-linecap="round">
+    <path d="M 74.2069 332.6367 A 205 70 -25 0 1 445.7931 159.3633" stroke="url(#blue-orbit)" stroke-width="1.8"/>
+    <path d="M 427.9262 363.5832 A 205 70 35 0 1 92.0738 128.4168" stroke="url(#blue-orbit)" stroke-width="1.8"/>
+    <path d="M 263.5777 450.9688 A 205 64 89 0 1 256.4223 41.0312" stroke="url(#gold-orbit)" stroke-width="1.5"/>
+  </g>
+  <circle cx="260" cy="246" r="83" fill="url(#sphere)"/>
+  <ellipse cx="241" cy="207" rx="35" ry="12" transform="rotate(-28 241 207)" fill="#fff" opacity=".38"/>
+  <g stroke-linecap="round">
+    <path d="M 445.7931 159.3633 A 205 70 -25 0 1 74.2069 332.6367" stroke="url(#blue-orbit)" stroke-width="1.8"/>
+    <path d="M 92.0738 128.4168 A 205 70 35 0 1 427.9262 363.5832" stroke="url(#blue-orbit)" stroke-width="1.8"/>
+    <path d="M 256.4223 41.0312 A 205 64 89 0 1 263.5777 450.9688" stroke="url(#gold-orbit)" stroke-width="1.5"/>
+  </g>
+  <!-- Orbiting points sit on the same curves as their rings. -->
+  <circle cx="102.5811" cy="351.0119" r="10" fill="url(#electron)"/>
+  <circle cx="392.5773" cy="270.3298" r="7" fill="url(#electron)"/>
+  <circle cx="260.2658" cy="41.3331" r="8" fill="#c5aa79"/>
+  <circle cx="410.2906" cy="374.8504" r="5" fill="#8caac5"/>
+</svg>

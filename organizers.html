@@ -3,343 +3,63 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Organizers &amp; Sponsors | WiQAS</title>
+  <meta name="description" content="The WiQAS organizing committee and volunteers at the University of Windsor.">
+  <meta name="theme-color" content="#f5f5f7">
+  <title>Organizers | WiQAS</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
-
-  <style>
-    .team-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 24px;
-    }
-
-    .team-card {
-      min-width: 0;
-      min-height: 380px;
-      text-align: center;
-    }
-
-    .team-photo,
-    .team-avatar {
-      width: 160px;
-      height: 160px;
-      box-sizing: border-box;
-      margin: 0 auto 20px;
-      border: 4px solid #ffffff;
-      border-radius: 50%;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
-    }
-
-    .team-photo {
-      display: block;
-      object-fit: cover;
-      object-position: center 20%;
-    }
-
-    .team-avatar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #15345b;
-      color: #ffffff;
-      font-size: 42px;
-      font-weight: 800;
-    }
-
-    .team-card h3 {
-      margin: 0 0 14px;
-    }
-
-    .team-card p {
-      margin: 0;
-      line-height: 1.7;
-    }
-
-    .team-placeholder {
-      border: 2px dashed #cbd5e1;
-      background: transparent;
-      box-shadow: none;
-    }
-
-    @media (max-width: 960px) {
-      .team-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-
-    @media (max-width: 640px) {
-      .team-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <script src="script.js" defer></script>
 </head>
-
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header">
-    <div class="nav-wrap">
-      <a class="brand" href="index.html" aria-label="WiQAS home">
-        <span>
-          <img
-            class="uwinlogo"
-            src="uw_logo_2l_horz.jpg"
-            alt="University of Windsor"
-          >
-        </span>
-
-        <span class="brand-mark" aria-hidden="true">
-          <span class="brand-dot"></span>
-        </span>
-
-        <span class="brand-text">
-          <strong>WiQAS</strong>
-          <span>Windsor Quantum Applications Symposium</span>
-        </span>
-      </a>
-
-      <button
-        class="menu-toggle"
-        aria-label="Toggle navigation"
-        aria-expanded="false"
-      >☰</button>
-
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="index.html">Home</a>
-        <a href="program.html">Program</a>
-        <a href="speakers.html">Speakers</a>
-        <a href="attend.html">Attend</a>
-        <a href="organizers.html" aria-current="page">Organizers</a>
-        <a href="past.html">Past Editions</a>
-        <a
-          class="nav-cta"
-          href="https://forms.cloud.microsoft/r/x3CUvzhATm"
-        >Register</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
-    <section class="page-hero">
-      <div class="container">
-        <div>
-          <h1>Organizers &amp; Sponsors</h1>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="organizing-committee">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2>Organizing Committee</h2>
-          </div>
-        </div>
-
-        <div class="team-grid">
-
-          <article class="card team-card">
-            <img
-              class="team-photo"
-              src="Bol.png"
-              alt="Dr. Tirupati Bolisetti"
-              width="160"
-              height="160"
-              loading="lazy"
-              decoding="async"
-            >
-            <h3>Dr. Tirupati Bolisetti</h3>
-            <p>
+<body class="page-organizers">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html" aria-label="WiQAS 2026 home">
+      <img class="uwinlogo" src="uw_logo_2l_horz.jpg" alt="University of Windsor" width="138" height="53">
+      <span class="brand-word">WiQAS<span>2026</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="site-navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav-links" id="site-navigation" aria-label="Primary navigation"><a href="index.html">Home</a><!-- <a href="about.html">About</a> --><a href="program.html">Program</a><a href="speakers.html">Speakers</a><a href="attend.html">Attend</a><a href="organizers.html" aria-current="page" class="active">Organizers</a><a href="past.html">Past editions</a><a class="nav-cta" href="https://forms.cloud.microsoft/r/x3CUvzhATm">Register <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 15 15 5M5 5h10v10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></nav>
+  </div>
+</header>
+<main id="main" tabindex="-1"><section class="page-hero"><div class="container"><p class="eyebrow">The people behind WiQAS</p><h1>The organizing team.</h1><p class="page-lead">Faculty and volunteers at the University of Windsor.</p></div></section>
+<section class="section" id="organizing-committee"><div class="container"><div class="section-head"><div><p class="eyebrow">University of Windsor</p><h2>Organizing committee.</h2></div></div><div class="team-grid"><article class="card team-card"><img class="team-photo" src="Bol.png" alt="Dr. Tirupati Bolisetti" width="112" height="112" loading="lazy" decoding="async"><h3>Dr. Tirupati Bolisetti</h3><p>
               Professor<br>
               Department of Civil and Environmental Engineering<br>
               University of Windsor
-            </p>
-          </article>
-
-          <article class="card team-card">
-            <img
-              class="team-photo"
-              src="kar.png"
-              alt="Dr. Narayan Kar"
-              width="160"
-              height="160"
-              loading="lazy"
-              decoding="async"
-            >
-            <h3>Dr. Narayan Kar</h3>
-            <p>
+            </p></article><article class="card team-card"><img class="team-photo" src="kar.png" alt="Dr. Narayan Kar" width="112" height="112" loading="lazy" decoding="async"><h3>Dr. Narayan Kar</h3><p>
               Distinguished University Professor<br>
               Department of Electrical and Computer Engineering<br>
               University of Windsor
-            </p>
-          </article>
-
-          <article class="card team-card">
-            <img
-              class="team-photo"
-              src="mir.png"
-              alt="Dr. Mitra Mirhassani"
-              width="160"
-              height="160"
-              loading="lazy"
-              decoding="async"
-            >
-            <h3>Dr. Mitra Mirhassani</h3>
-            <p>
+            </p></article><article class="card team-card"><img class="team-photo" src="mir.png" alt="Dr. Mitra Mirhassani" width="112" height="112" loading="lazy" decoding="async"><h3>Dr. Mitra Mirhassani</h3><p>
               Professor<br>
               Department of Electrical and Computer Engineering<br>
               University of Windsor
-            </p>
-          </article>
-
-          <article class="card team-card">
-            <img
-              class="team-photo"
-              src="ran.png"
-              alt="Dr. Chitra Rangan"
-              width="160"
-              height="160"
-              loading="lazy"
-              decoding="async"
-            >
-            <h3>Dr. Chitra Rangan</h3>
-            <p>
+            </p></article><article class="card team-card"><img class="team-photo" src="ran.png" alt="Dr. Chitra Rangan" width="112" height="112" loading="lazy" decoding="async"><h3>Dr. Chitra Rangan</h3><p>
               Associate Dean, Faculty of Graduate Studies<br>
               Professor, Department of Physics<br>
               University of Windsor
-            </p>
-          </article>
-
-          <article class="card team-card">
-            <img
-              class="team-photo"
-              src="ver.png"
-              alt="Dr. Cláudio Verani"
-              width="160"
-              height="160"
-              loading="lazy"
-              decoding="async"
-            >
-            <h3>Dr. Cláudio Verani</h3>
-            <p>
+            </p></article><article class="card team-card"><img class="team-photo" src="ver.png" alt="Dr. Cláudio Verani" width="112" height="112" loading="lazy" decoding="async"><h3>Dr. Cláudio Verani</h3><p>
               Dean, Faculty of Science<br>
               Professor of Chemistry<br>
               University of Windsor
-            </p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt" id="volunteers">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2>Volunteers</h2>
-          </div>
-        </div>
-
-        <div class="team-grid">
-
-          <article class="card team-card">
-            <img
-              class="team-photo"
-              src="vin.png"
-              alt="Vinay Kumar Chukka"
-              width="160"
-              height="160"
-              loading="lazy"
-              decoding="async"
-            >
-            <h3>Vinay Kumar Chukka</h3>
-            <p>
+            </p></article></div></div></section>
+<section class="section alt" id="volunteers"><div class="container"><div class="section-head"><div><p class="eyebrow">Event support</p><h2>Our volunteers.</h2></div></div><div class="team-grid"><article class="card team-card"><img class="team-photo" src="vin.png" alt="Vinay Kumar Chukka" width="112" height="112" loading="lazy" decoding="async"><h3>Vinay Kumar Chukka</h3><p>
               PhD Student<br>
               Department of Civil and Environmental Engineering<br>
               University of Windsor
-            </p>
-          </article>
-
-          <article class="card team-card">
-            <div class="team-avatar" aria-hidden="true">RR</div>
-            <h3>Richa Rayamajhi</h3>
-            <p>
+            </p></article><article class="card team-card"><div class="team-avatar" aria-hidden="true">RR</div><h3>Richa Rayamajhi</h3><p>
               Graduate Student, Civil Engineering<br>
               University of Windsor
-            </p>
-          </article>
-
-          <article
-            class="card team-card team-placeholder"
-            aria-hidden="true"
-          ></article>
-
-          <article
-            class="card team-card team-placeholder"
-            aria-hidden="true"
-          ></article>
-
-          <article
-            class="card team-card team-placeholder"
-            aria-hidden="true"
-          ></article>
-
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a class="brand" href="index.html">
-          <span class="brand-mark" aria-hidden="true">
-            <span class="brand-dot"></span>
-          </span>
-
-          <span class="brand-text">
-            <strong>WiQAS</strong>
-            <span>Windsor Quantum Applications Symposium</span>
-          </span>
-        </a>
-
-        <p>
-          A University of Windsor symposium connecting quantum science,
-          engineering, computation, and real-world applications.
-        </p>
-      </div>
-
-      <div>
-        <h4>Explore</h4>
-        <a href="about.html">About</a>
-        <a href="program.html">Program</a>
-        <a href="speakers.html">Speakers</a>
-      </div>
-
-      <div>
-        <h4>Attend</h4>
-        <a href="attend.html#registration">Registration</a>
-        <a href="attend.html#venue">Venue</a>
-        <a href="attend.html#travel">Travel</a>
-      </div>
-
-      <div>
-        <h4>Organization</h4>
-        <a href="organizers.html#organizing-committee">Organizing Committee</a>
-        <a href="organizers.html#volunteers">Volunteers</a>
-        <a href="past.html">Past Editions</a>
-      </div>
-    </div>
-
-    <div class="copyright" style="display:block;text-align:center;">
-      <span>
-        © <span data-year></span>
-        Windsor Quantum Applications Symposium.
-      </span>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+            </p></article><article class="card team-card team-placeholder" aria-hidden="true"></article><article class="card team-card team-placeholder" aria-hidden="true"></article><article class="card team-card team-placeholder" aria-hidden="true"></article></div></div></section></main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand"><a href="index.html" class="footer-wordmark">WiQAS<span>2026</span></a><p>Windsor Quantum Applications Symposium.<br>Science, engineering, and applications at the University of Windsor.</p></div>
+    <div><h2>Explore</h2><a href="about.html">About WiQAS</a><a href="program.html">Program</a><a href="speakers.html">Speakers</a></div>
+    <div><h2>Attend</h2><a href="attend.html#registration">Registration</a><a href="attend.html#venue">Venue</a><a href="attend.html#travel">Travel information</a></div>
+    <div><h2>Community</h2><a href="organizers.html#organizing-committee">Organizing committee</a><a href="organizers.html#volunteers">Volunteers</a><a href="past.html">Past editions</a></div>
+  </div>
+  <div class="container copyright">© <span data-year>2026</span> Windsor Quantum Applications Symposium.</div>
+</footer>
 </body>
 </html>

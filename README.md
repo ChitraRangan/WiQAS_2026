@@ -1,7 +1,7 @@
 # WiQAS 2026 website
 
 An Apple-inspired redesign of the supplied WiQAS website. This is a static,
-seven-page site with local images, CSS, JavaScript, and SVG artwork.
+eight-page site with local images, CSS, JavaScript, and SVG artwork.
 
 ## Open or update the website
 
@@ -22,13 +22,17 @@ Microsoft Forms registration page supplied with the website.
 - `attend.html`: registration deadline, venues, campus map, and parking map.
 - `organizers.html`: committee, volunteers, and three empty volunteer cards.
 - `past.html`: the supplied 2025 program and event information.
+- `past-2024.html`: Quantum Day 2024, transcribed from the supplied agenda.
+- `agenda-2024.png`: the original 2024 agenda image.
+
+Hover over **Past editions** in the header to choose 2024 or 2025. On touch screens, tap **Past editions** to expand the links. The links also work with the keyboard and with JavaScript disabled.
 
 ## Shared design and behavior
 
 - `styles.css` contains the common layout, typography, colors, and responsive
   breakpoints.
 - `script.js` controls the mobile navigation, program filters, print button,
-  current year, and short content reveals.
+  current year, edition dropdown hover behavior, and short content reveals.
 - Mobile navigation and the program selection indicator use interruptible,
   critically damped springs. No animation library is required.
 - Small-screen program rows become session cards. The speaker preview uses
@@ -40,8 +44,9 @@ Microsoft Forms registration page supplied with the website.
 ## Content retained
 
 The 14 schedule rows in the 2026 agenda and the 23 rows in the 2025 agenda match
-the supplied current files. The unconfirmed 11:30–12:00 slot remains unconfirmed.
-The supplied speaker names, affiliations, times, registration link, registration
+the supplied current files. The unconfirmed 11:30-12:00 slot remains unconfirmed.
+The 2024 agenda keeps both 3:05 entries (health break and poster session) as
+shown in the original image. The supplied speaker names, affiliations, times, registration link, registration
 deadline, venues, and committee information are retained. Richa Rayamajhi uses
 an initials avatar, and the three additional volunteer cards remain empty.
 
@@ -53,6 +58,7 @@ contracts were checked. Behavior checks cover menu open/close, Escape focus
 return, outside dismissal, spring reversal, desktop navigation access, agenda
 filters, print invocation, and reduced-motion menu behavior.
 
-Visual desktop/mobile browser checks could not run because the managed preview
-service failed to start in this environment. Review the extracted site in your
-browser before publishing it.
+Desktop browser checks confirmed pointer opening of the edition dropdown,
+navigation to the 2024 and 2025 pages, keyboard activation, Escape focus return,
+and dismissal when tabbing outside. The mobile navigation behavior checks passed;
+the mobile layout has not been visually checked.

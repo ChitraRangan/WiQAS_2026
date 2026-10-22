@@ -46,6 +46,44 @@
   const header = document.querySelector('.site-header');
   const menuButton = document.querySelector('.menu-toggle');
   const navigation = document.querySelector('.nav-links');
+  const editionMenus = [...document.querySelectorAll('.nav-dropdown')];
+  function closeEditionMenus(except = null) {
+    for (const menu of editionMenus) if (menu !== except) menu.open = false;
+  }
+  for (const menu of editionMenus) {
+    const summary = menu.querySelector('summary');
+    menu.addEventListener('pointerenter', event => {
+      if (mobile.matches || event.pointerType !== 'mouse') return;
+      closeEditionMenus(menu);
+      menu.open = true;
+    });
+    menu.addEventListener('pointerleave', event => {
+      if (event.pointerType === 'mouse' && !mobile.matches && !menu.contains(document.activeElement)) menu.open = false;
+    });
+    menu.addEventListener('focusout', event => {
+      if (!menu.contains(event.relatedTarget)) menu.open = false;
+    });
+    menu.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && menu.open) {
+        event.preventDefault();
+        event.stopPropagation();
+        menu.open = false;
+        summary.focus();
+      } else if (event.target === summary && event.key === 'ArrowDown') {
+        event.preventDefault();
+        menu.open = true;
+        menu.querySelector('a').focus();
+      }
+    });
+    menu.addEventListener('toggle', () => {
+      if (menu.open) closeEditionMenus(menu);
+    });
+  }
+  document.addEventListener('pointerdown', event => {
+    for (const menu of editionMenus) if (!menu.contains(event.target)) menu.open = false;
+  });
+  mobile.addEventListener('change', () => closeEditionMenus());
+
   let menuOpen = false;
   if (menuButton && navigation) {
     const menuSpring = spring(0, value => {
@@ -56,6 +94,7 @@
     });
     function setMenu(open, restoreFocus = false, immediate = false) {
       menuOpen = open && mobile.matches;
+      if (!menuOpen) closeEditionMenus();
       menuButton.setAttribute('aria-expanded', String(menuOpen));
       menuButton.setAttribute('aria-label', menuOpen ? 'Close navigation' : 'Open navigation');
       navigation.inert = mobile.matches && !menuOpen;
